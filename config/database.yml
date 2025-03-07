@@ -1,0 +1,10 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: dheena
+  password: dheena
+  host: localhost
+development:
+  <<: *default
+  database: g_actions
